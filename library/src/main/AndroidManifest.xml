@@ -1,3 +1,6 @@
-<manifest package="nz.co.cic.mdns">
+<manifest package="nz.co.cic.mdns"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
 </manifest>
