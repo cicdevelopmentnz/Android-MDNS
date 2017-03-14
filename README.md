@@ -16,7 +16,7 @@ Add the following to your root build.gradle
 Add the dependency
 ```gradle
    dependencies {
-      compile 'com.github.cicdevelopmentnz:Android-MDNS:v0.0.1'
+      compile 'com.github.cicdevelopmentnz:Android-MDNS:v0.0.2'
    }
 ```
 
@@ -25,7 +25,7 @@ Add the dependency
 ### Initialization
 
 ```java
-   MDN mdns = new MDNS(this);
+   MDNS mdns = new MDNS(this);
 ```
 
 ### Advertiser 
