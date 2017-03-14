@@ -50,10 +50,12 @@ class MDNSAdvertiser(private val mContext: Context) : NsdManager.RegistrationLis
     }
 
     override fun onServiceRegistered(nsdServiceInfo: NsdServiceInfo) {
+        observer?.onNext(MDNSStatus("Service Registered"))
         this.observer?.onComplete()
     }
 
     override fun onServiceUnregistered(nsdServiceInfo: NsdServiceInfo) {
+        observer?.onNext(MDNSStatus("Service Unregistered"))
         this.dObserver?.onComplete()
     }
 }
